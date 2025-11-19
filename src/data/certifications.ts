@@ -45,11 +45,13 @@ export const certifications: Certification[] = [
     title: "Développement Front-End moderne avec React",
     shortTitle: "React Front-End Development",
     issuer: "MLIAEdu",
-    issueDate: "2025-12", // Date estimée - à mettre à jour après obtention
-    skills: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui"],
-    tags: ["React", "Hooks", "Front-End"],
-    status: "pending", // En cours d'obtention
+    issueDate: "2025-11",
+    credentialId: "26-0cb05bd8-a850-4bd0-b184-2bcb3fa335df-626407",
+    skills: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "React Router", "Framer Motion"],
+    tags: ["React", "Hooks", "Front-End", "Web Development"],
+    status: "active",
+    score: 91,
     image: "/images/certs/react-cert.jpg",
-    imageAlt: "Certification React MLIAEdu"
+    imageAlt: "Certification React MLIAEdu - Score 91%"
   }
 ];
