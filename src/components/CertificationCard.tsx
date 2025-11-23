@@ -25,7 +25,6 @@ export default function CertificationCard({ c }: { c: Certification }) {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-purple-500/0 to-pink-500/0 group-hover:from-primary/5 group-hover:via-purple-500/5 group-hover:to-pink-500/5 transition-all duration-500 pointer-events-none" />
       
-<<<<<<< HEAD
       {/* Image du certificat en haut - seulement si l'image existe */}
       {c.image && (
         <div className="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-muted/20 to-muted/10">
@@ -64,54 +63,6 @@ export default function CertificationCard({ c }: { c: Certification }) {
           </Badge>
         </div>
       )}
-=======
-      {/* Image du certificat en haut */}
-      <div className="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-muted/20 to-muted/10">
-        {c.image ? (
-          <>
-            <img
-              src={c.image}
-              alt={c.imageAlt ?? c.title}
-              loading="lazy"
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.style.display = 'none';
-                const parent = target.parentElement;
-                if (parent) {
-                  parent.innerHTML = `
-                    <div class="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-purple-500/10">
-                      <div class="text-center p-4">
-                        <div class="text-4xl mb-2">📜</div>
-                        <div class="text-sm text-muted-foreground">Certificat</div>
-                      </div>
-                    </div>
-                  `;
-                }
-              }}
-            />
-            {/* Badge score en haut à droite */}
-            {c.score !== undefined && (
-              <div className="absolute top-2 right-2 z-10">
-                <Badge 
-                  variant="destructive" 
-                  className="text-xs md:text-sm font-bold rounded-full px-2 md:px-3 py-1 shadow-lg"
-                >
-                  {c.score}%
-                </Badge>
-              </div>
-            )}
-          </>
-        ) : (
-          <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary/10 to-purple-500/10">
-            <div className="text-center p-4">
-              <div className="text-4xl mb-2">📜</div>
-              <div className="text-sm text-muted-foreground">Certificat</div>
-            </div>
-          </div>
-        )}
-      </div>
->>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
 
       {/* Contenu de la carte */}
       <CardHeader className="relative z-10 p-4 md:p-6 flex-1 flex flex-col">

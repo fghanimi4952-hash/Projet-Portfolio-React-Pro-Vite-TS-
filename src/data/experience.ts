@@ -44,8 +44,6 @@ export const experiences: Experience[] = [
     ]
   },
   {
-=======
->>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
     title: "Stage en administration",
     company: "Lycée Abou Al Abass Assabti",
     location: "Marrakech",
