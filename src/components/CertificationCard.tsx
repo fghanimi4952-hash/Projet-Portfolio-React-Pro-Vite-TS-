@@ -2,6 +2,8 @@ import type { Certification } from "@/data/certifications";
 import clsx from "clsx";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Eye } from "lucide-react";
 
 function formatDate(s: string) {
   const [y, m] = s.split("-");
@@ -75,6 +77,29 @@ export default function CertificationCard({ c }: { c: Certification }) {
         <CardDescription className="text-xs md:text-sm text-muted-foreground mb-4">
           {formatDate(c.issueDate)}
         </CardDescription>
+        
+        {/* Bouton pour voir le certificat */}
+        {(c.credentialUrl || c.image) && (
+          <div className="mb-3 md:mb-4">
+            <Button
+              asChild
+              variant="outline"
+              size="sm"
+              className="w-full rounded-full border-primary/30 hover:border-primary hover:bg-primary/10 transition-all text-xs md:text-sm"
+            >
+              <a
+                href={c.credentialUrl || c.image}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <Eye className="w-3 h-3 md:w-4 md:h-4" />
+                <span>Voir le certificat</span>
+                <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
+              </a>
+            </Button>
+          </div>
+        )}
         
         {/* Tags en bas */}
         {c.tags && c.tags.length > 0 && (

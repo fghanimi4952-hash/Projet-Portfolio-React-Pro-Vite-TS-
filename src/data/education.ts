@@ -6,6 +6,7 @@ export type Education = {
   start: string; 
   end?: string;
   gpa?: string; 
+  mention?: string; // Mention obtenue (ex: "Bien", "Très Bien")
   courses?: string[]; 
   highlights?: string[];
 };
@@ -36,6 +37,7 @@ export const education: Education[] = [
     location: undefined, // Marrakech déjà dans le nom de l'école
     start: "2020-09",
     end: "2023-06",
+    mention: "Bien",
     courses: ["Pédagogie","Didactique de l'informatique","Technologies éducatives"],
     highlights: ["Formation spécialisée en enseignement de l'informatique"]
   },
@@ -46,6 +48,7 @@ export const education: Education[] = [
     location: "Marrakech",
     start: "2019-09",
     end: "2019-06",
+    mention: "Très Bien",
     highlights: ["Baccalauréat Sciences Physiques"]
   }
 ];

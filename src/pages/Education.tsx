@@ -94,6 +94,11 @@ export default function EducationPage() {
                         <Badge variant="outline" className="rounded-full glass border-primary/30 text-xs">
                           {fmt(e.start) === fmt(e.end) ? fmt(e.start) : `${fmt(e.start)} — ${fmt(e.end)}`}
                         </Badge>
+                        {e.mention && (
+                          <Badge variant="secondary" className="rounded-full glass text-xs bg-primary/10 text-primary border-primary/20">
+                            Mention {e.mention}
+                          </Badge>
+                        )}
                         {e.gpa && (
                           <Badge variant="secondary" className="rounded-full glass text-xs">
                             GPA {e.gpa}
