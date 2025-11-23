@@ -29,7 +29,6 @@ export const experiences: Experience[] = [
     ]
   },
   {
-<<<<<<< HEAD
     title: "Stage d'enseignement",
     company: "Lycée Ibn Abbad",
     location: "Marrakech",
