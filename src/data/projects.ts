@@ -35,6 +35,6 @@ export const projects: Project[] = [
     period: "2024",
     tags: ["React","TypeScript","Tailwind CSS","Vite"],
     summary: "Portfolio professionnel moderne développé avec React, TypeScript et Tailwind CSS pour présenter mon parcours et mes compétences.",
-    repo: "https://github.com/fghanimi4952-hash"
+    repo: "https://github.com/fghanimi4952-hash/Projet-Portfolio-React-Pro-Vite-TS-.git"
   }
 ];

@@ -22,8 +22,7 @@ export default function RootLayout() {
             to="/" 
             className="font-bold text-lg md:text-xl gradient-text hover:scale-105 transition-transform duration-300"
           >
-            <span className="hidden sm:inline">GHANIMI Fatima Ezzahra</span>
-            <span className="sm:hidden">F. GHANIMI</span>
+            Mon Portfolio
           </NavLink>
           
           {/* Desktop Navigation */}
@@ -185,7 +184,7 @@ export default function RootLayout() {
       <footer className="border-t border-border/40 mt-12 md:mt-24 py-6 md:py-8 text-center relative z-10 glass">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
           <p className="text-xs md:text-sm text-muted-foreground">
-            © {new Date().getFullYear()} • <span className="font-semibold text-foreground gradient-text">GHANIMI Fatima Ezzahra</span>
+            © {new Date().getFullYear()} • <span className="font-semibold text-foreground gradient-text">Mon Portfolio</span>
           </p>
           <p className="text-xs text-muted-foreground mt-2">
             Professeure d'informatique • Province Rhamna, Maroc

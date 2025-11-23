@@ -29,6 +29,20 @@ export const experiences: Experience[] = [
     ]
   },
   {
+    title: "Stage d'enseignement",
+    company: "Lycée Ibn Abbad",
+    location: "Marrakech",
+    start: "2024-02",
+    end: "2024-06",
+    responsibilities: [
+      "Participation à des séances d'observation",
+      "Préparation des cours et des évaluations",
+      "Explication et présentation des notions en classe",
+      "Accompagnement et orientation des élèves durant les travaux pratiques (TP)",
+      "Suivi et correction des travaux des élèves"
+    ]
+  },
+  {
     title: "Stage en administration",
     company: "Lycée Abou Al Abass Assabti",
     location: "Marrakech",
