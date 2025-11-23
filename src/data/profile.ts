@@ -6,7 +6,11 @@ export const profile = {
   image: "/images/profile.jpg", // Image de profil
   socials: [
     { label: "GitHub", href: "https://github.com/fghanimi4952-hash" },
+<<<<<<< HEAD
     { label: "LinkedIn", href: "http://www.linkedin.com/in/fatima-ezzahra-ghanimi-1a1813391" }
+=======
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/fatima-ghanimi" }
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
   ],
   about: "Professeure d'informatique passionnée par les technologies émergentes en éducation. Spécialisée dans la didactique et l'intégration des nouvelles technologies dans l'enseignement.",
   skills: ["Pédagogie","Technologies Émergentes","Enseignement Informatique","Didactique","Formation"]

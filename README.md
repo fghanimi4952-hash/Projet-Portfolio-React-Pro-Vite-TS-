@@ -13,6 +13,7 @@ Portfolio professionnel moderne construit avec React, TypeScript, Vite, Tailwind
 -  **Certifications avec badges** : Affichage des badges avec filtre de recherche
 -  **Accessibilité** : ARIA labels et navigation au clavier
 
+<<<<<<< HEAD
 ##  Installation
 
 ```bash
@@ -173,4 +174,16 @@ vercel dashboard
 - [ ] Intégrer Google Analytics ou Plausible
 - [ ] Ajouter un blog/portfolio détaillé
 - [ ] Optimiser les images avec lazy loading
+=======
+
+##  Structure du projet
+
+<img width="880" height="699" alt="Capture d’écran 2025-11-19 à 02 39 33" src="https://github.com/user-attachments/assets/0adcba83-8504-4fcf-afc0-02806fed0257" />
+
+## Résultat : 
+
+
+
+https://github.com/user-attachments/assets/c1912d1b-e66f-4cc0-b280-89def38d6a9f
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
 

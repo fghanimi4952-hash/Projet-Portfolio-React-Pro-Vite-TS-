@@ -92,7 +92,11 @@ export default function EducationPage() {
                       </p>
                       <div className="flex flex-wrap items-center gap-2 text-xs md:text-sm mb-3 md:mb-4">
                         <Badge variant="outline" className="rounded-full glass border-primary/30 text-xs">
+<<<<<<< HEAD
                           {fmt(e.start) === fmt(e.end) ? fmt(e.start) : `${fmt(e.start)} — ${fmt(e.end)}`}
+=======
+                          {fmt(e.start)} — {fmt(e.end)}
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
                         </Badge>
                         {e.gpa && (
                           <Badge variant="secondary" className="rounded-full glass text-xs">

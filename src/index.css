@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+<<<<<<< HEAD
 :root {
+=======
+  :root {
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
     --card: 0 0% 100%;
@@ -48,7 +52,11 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 262 83% 65%;
     color-scheme: dark;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
 }
 
 @layer base {
@@ -58,14 +66,23 @@
   body {
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
 }
 
 @layer utilities {
   .glass {
     @apply bg-background/80 backdrop-blur-xl border border-border/50;
+<<<<<<< HEAD
 }
 
+=======
+  }
+  
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
   .glass-strong {
     @apply bg-background/90 backdrop-blur-2xl border border-border/50;
   }
@@ -86,7 +103,11 @@
   
   .glow {
     box-shadow: 0 0 20px rgba(139, 92, 246, 0.3);
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
   
   .glow-hover:hover {
     box-shadow: 0 0 30px rgba(139, 92, 246, 0.5);
@@ -95,8 +116,13 @@
   
   .animate-float {
     animation: float 6s ease-in-out infinite;
+<<<<<<< HEAD
 }
 
+=======
+  }
+  
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
   @keyframes float {
     0%, 100% {
       transform: translateY(0px);
@@ -114,7 +140,11 @@
   @keyframes gradient {
     0% {
       background-position: 0% 50%;
+<<<<<<< HEAD
   }
+=======
+    }
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
     50% {
       background-position: 100% 50%;
     }

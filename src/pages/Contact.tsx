@@ -1,7 +1,19 @@
+<<<<<<< HEAD
 import { Helmet } from "react-helmet-async";
 import { profile } from "@/data/profile";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Github, Linkedin } from "lucide-react";
+=======
+import { useState } from "react";
+import { Helmet } from "react-helmet-async";
+import { profile } from "@/data/profile";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { Mail, MapPin, Github, Linkedin, Send, CheckCircle2 } from "lucide-react";
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -25,9 +37,31 @@ const itemVariants = {
 };
 
 export default function Contact() {
+<<<<<<< HEAD
   return (
     <motion.section 
       className="space-y-8 md:space-y-12"
+=======
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+    setTimeout(() => {
+      setSubmitted(false);
+      setFormData({ name: "", email: "", message: "" });
+    }, 3000);
+  };
+
+  return (
+    <motion.section 
+      className="grid gap-8 md:gap-12 lg:grid-cols-2"
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
       variants={containerVariants}
       initial="hidden"
       animate="visible"
@@ -103,6 +137,88 @@ export default function Contact() {
           </motion.div>
         </div>
       </motion.div>
+<<<<<<< HEAD
+=======
+
+      <motion.div variants={itemVariants}>
+        <Card className="shadow-xl border-border/50">
+          <CardHeader className="p-4 md:p-6">
+            <CardTitle className="text-xl md:text-2xl">Envoyer un message</CardTitle>
+            <CardDescription className="text-sm md:text-base">
+              Remplissez le formulaire ci-dessous et je vous répondrai dans les plus brefs délais.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="p-4 md:p-6 pt-0">
+            {submitted ? (
+              <motion.div 
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                className="p-4 md:p-6 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg flex items-start md:items-center gap-3"
+              >
+                <CheckCircle2 className="w-5 h-5 md:w-6 md:h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5 md:mt-0" />
+                <div>
+                  <p className="font-semibold text-green-800 dark:text-green-200 text-sm md:text-base">
+                    Message envoyé avec succès !
+                  </p>
+                  <p className="text-xs md:text-sm text-green-700 dark:text-green-300 mt-1">
+                    Je vous répondrai bientôt.
+                  </p>
+                </div>
+              </motion.div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-4 md:space-y-5">
+                <div>
+                  <label htmlFor="name" className="block text-xs md:text-sm font-medium mb-2">
+                    Nom complet
+                  </label>
+                  <Input
+                    id="name"
+                    type="text"
+                    required
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="rounded-lg text-sm md:text-base"
+                    placeholder="Votre nom"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-xs md:text-sm font-medium mb-2">
+                    Email
+                  </label>
+                  <Input
+                    id="email"
+                    type="email"
+                    required
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    className="rounded-lg text-sm md:text-base"
+                    placeholder="votre.email@exemple.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="message" className="block text-xs md:text-sm font-medium mb-2">
+                    Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    required
+                    rows={5}
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                    className="rounded-lg resize-none text-sm md:text-base"
+                    placeholder="Votre message..."
+                  />
+                </div>
+                <Button type="submit" className="w-full rounded-full text-sm md:text-base" size="lg">
+                  <Send className="w-4 h-4 mr-2" />
+                  Envoyer le message
+                </Button>
+              </form>
+            )}
+          </CardContent>
+        </Card>
+      </motion.div>
+>>>>>>> b585eaa11102bad2ca40175cbb904e58a0c6dabe
     </motion.section>
   );
 }
